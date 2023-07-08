@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <style>
+        p, h1, h2, div{
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .header{
+            display: flex; 
+            justify-content: space-between;  
+            align-items: center;        
+            padding-top: 20px; 
+        }
+        .header img{
+            /* filter: invert(); */
+        }
+        .header>.right{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .sign-in{
+            padding: 10px 20px;
+            border: 2px solid pink;
+            border-radius: 25px;
+        }
+        body{
+            background-color: rgb(43, 122, 226);
+        }
+        .right p{
+            color: white;
+            font-size: 1.1rem;
+        }
+        .body-1{
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+        }
+        .body-1 p{
+            font-size: 5rem;
+            text-align: center;
+        }
+        .body-2{
+            display: flex;
+            justify-content: center;            
+            flex-wrap: wrap;
+            margin-top: 50px;
+            gap: 15px;
+        }
+        .body-2 .round{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: azure;
+        }
+        .body-2 p{
+            font-size: 6rem;
+            font-weight: bold;
+        }
+        .container-size{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 55%;            
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .activeButton { 
+            
+            /* //button click */
+            background-color: blueviolet;
+            /* opacity: 50%; */
+            width: 190px !IMPORTANT;
+            height: 190px !IMPORTANT;
+            align-items: center !IMPORTANT;
+            justify-content: center !IMPORTANT;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-size">
+        <div class="header">
+            <div class="left">
+                <img src="../res/FlexFit_logo.png" alt="logo">
+            </div>
+            <div class="right">
+                <p>Home</p>
+                <p>Offer</p>
+                <p>Packages</p>
+                <p>About</p>
+                <p class="sign-in">Sign In</p>
+            </div>
+
+        </div>
+        <div class="body-1">
+            <p><span style="font-weight: bold;">Press</span> the buttons below or keyboard buttons to play <span style="color: orange; font-weight: bold;">Music!</span> </p>
+        </div>
+        <div class="body-2">
+            <div class="round a"><p>a</p></div>
+            <div class="round s"><p>s</p></div>
+            <div class="round d"><p>d</p></div>
+            <div class="round w"><p>w</p></div>
+            <div class="round j"><p>j</p></div>
+            <div class="round k"><p>k</p></div>
+            <div class="round l"><p>l</p></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
